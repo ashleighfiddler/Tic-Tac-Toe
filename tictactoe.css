@@ -3,20 +3,35 @@
   text-align: center;
 
 }
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: red;
 
+}
 td {
   height:150px;
   width:150px;
   text-align: center;
   font-size: 100px;
 }
-
+.text {
+  text-align: center;
+  font-size: 16pt;
+}
 table {
   margin: auto auto;
 }
 table tr:nth-child(odd) {
-  background-color: cornflowerblue;
+  background-color: rgba(100, 148, 237, 0.178);
 }
 table tr:nth-child(even) {
-  background-color: rgb(217, 248, 156)
+  background-color: rgba(199, 255, 86, 0.479)
+}
+
+/* table th:nth-child(odd) {
+  background color: rgba(217, 248, 156, 0.247)
+} */
+
+table th:nth-child(even) {
+  background-color: rgba(20, 161, 44, 0.247)
 }

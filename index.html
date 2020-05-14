@@ -2,16 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Tic Tac Toe</title>
+    <title>Coronavirus Bingo: White House Edition</title>
     <!-- link to CSS code -->
     <link rel="stylesheet" href="tictactoe.css">
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
     <!-- link to JavaScript code -->
     <script src="scripts.js"></script>
+    <script>
+      const rotate = (arr) => {
+        let letters =['a', 'b', 'c']
+        letters.shift();
+        document.getElementById("demo").innerHTML = letters;
+      }
+    </script>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Welcome to Tic Tac Toe</h1>
+        <h1><em>Welcome to</em><br>Coronavirus Bingo: White House Edition</h1>
         <p>Get ready to play!</p>
         <!-- uses the built-in onclick attribute to call the resetBoard function -->
         <button onclick="resetBoard()" type="button" class="btn btn-primary btn-lg" name="button">Restart</button>
@@ -19,20 +27,44 @@
       <table>
         <tr>
           <!-- the onclick calls a function called "handleClick" and passes itself to it -->
-          <td id='top-left' onclick="handleClick(this)" ></td>
+          <td id='top-left' onclick="handleClick(this)" >
+            <div class=text>New White House Infection</div>
+          </td>
+          <td id='top-2left' onclick="handleClick(this)" ></td>
           <td id='top-middle' onclick="handleClick(this)" ></td>
+          <td id='top-2right' onclick="handleClick(this)" ></td>
           <td id ='top-right' onclick="handleClick(this)"></td>
         </tr>
         <tr>
           <!-- the onclick calls a function called "handleClick" and passes itself to it -->
+          <td id='2top-left' onclick="handleClick(this)" ></td>
+          <td id='2top-2left' onclick="handleClick(this)" ></td>
+          <td id='2top-middle' onclick="handleClick(this)" ></td>
+          <td id='2top-2right' onclick="handleClick(this)" ></td>
+          <td id='2top-right' onclick="handleClick(this)"></td>
+        </tr>
+        <tr>
+          <!-- the onclick calls a function called "handleClick" and passes itself to it -->
           <td id='middle-left' onclick="handleClick(this)" ></td>
+          <td id='middle-2left' onclick="handleClick(this)" ></td>
           <td id='middle-middle' onclick="handleClick(this)" ></td>
+          <td id='middle-2right' onclick="handleClick(this)" ></td>
           <td id='middle-right' onclick="handleClick(this)" ></td>
         </tr>
         <tr>
           <!-- the onclick calls a function called "handleClick" and passes itself to it -->
           <td id='bottom-left' onclick="handleClick(this)" ></td>
+          <td id='bottom-2left' onclick="handleClick(this)" ></td>
           <td id='bottom-middle' onclick="handleClick(this)"></td>
+          <td id='bottom-2right' onclick="handleClick(this)" ></td>
+          <td id='bottom-right' onclick="handleClick(this)" ></td>
+        </tr>
+        <tr>
+          <!-- the onclick calls a function called "handleClick" and passes itself to it -->
+          <td id='bottom-left' onclick="handleClick(this)" ></td>
+          <td id='bottom-2left' onclick="handleClick(this)" ></td>
+          <td id='bottom-middle' onclick="handleClick(this)"></td>
+          <td id='bottom-2right' onclick="handleClick(this)" ></td>
           <td id='bottom-right' onclick="handleClick(this)" ></td>
         </tr>
         <!-- @TODO create new rows and cells for the rest of your TTT board. -->
