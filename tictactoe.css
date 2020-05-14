@@ -4,8 +4,8 @@
 
 }
 h1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(142, 178, 245);
 
 }
 td {
@@ -22,10 +22,10 @@ table {
   margin: auto auto;
 }
 table tr:nth-child(odd) {
-  background-color: rgba(100, 148, 237, 0.178);
+  background-color: rgb(142, 178, 245);
 }
 table tr:nth-child(even) {
-  background-color: rgba(199, 255, 86, 0.479)
+  background-color: rgb(153, 253, 237)
 }
 
 /* table th:nth-child(odd) {
